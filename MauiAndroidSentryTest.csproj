@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<TargetFrameworks>net9.0-android;net9.0-ios;net9.0-maccatalyst</TargetFrameworks>
@@ -41,7 +41,7 @@
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
 	</PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+  <PropertyGroup>
     <!-- TODO: Replace these accordingly -->
     <SentryOrg>MY-SENTRY-ORG</SentryOrg>
     <SentryProject>MY-SENTRY-PROJECT</SentryProject>
